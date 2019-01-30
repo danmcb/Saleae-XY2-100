@@ -30,7 +30,6 @@ void XY2100Analyzer::WorkerThread()
 	U64 next_sample = 0;
 
 	mSampleRateHz = GetSampleRate();
-	SetupResults();
 
 	mClk = GetAnalyzerChannelData( mSettings->mClkChannel );
 	mSync = GetAnalyzerChannelData(mSettings->mSyncChannel);
